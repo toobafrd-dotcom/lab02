@@ -4,69 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            background: rgba(0, 0, 0, 0.15);
+            animation: slideDown 1s ease;
+        }
+
+        nav h2 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            height: calc(100vh - 70px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content {
+            animation: fadeUp 1.5s ease;
+        }
+
+        .content h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: zoomIn 1.5s ease;
+        }
+
+        .content h1 span {
+            color: #ffd700;
+        }
+
+        .content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #ffd700;
+            color: #333;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            animation: bounce 2s infinite;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Travel World</h1>
+    <nav>
+        <h2>My Website</h2>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#destinations">Destinations</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-    <section id="home">
-        <h2>Explore The World</h2>
-        <p>Discover beautiful places and unforgettable adventures.</p>
-        <button>Explore Now</button>
-    </section>
+    <section class="welcome">
 
-    <section id="destinations">
-        <h2>Popular Destinations</h2>
+        <div class="content">
 
-        <div class="card">
-            <h3>Paris</h3>
-            <p>Visit the beautiful Eiffel Tower.</p>
+            <h1>
+                Welcome to <span>My Website</span>
+            </h1>
+
+            <p>
+                We are happy to have you here!
+            </p>
+
+            <a href="#" class="btn">
+                Get Started
+            </a>
+
         </div>
 
-        <div class="card">
-            <h3>Dubai</h3>
-            <p>Enjoy luxury and amazing attractions.</p>
-        </div>
-
-        <div class="card">
-            <h3>Maldives</h3>
-            <p>Relax on beautiful beaches.</p>
-        </div>
     </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We help travelers discover amazing destinations around the world.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Travel World</p>
-    </footer>
-
-    <script src="script.js"></script>
 
 </body>
 </html>
