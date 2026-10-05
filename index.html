@@ -1,1 +1,1002 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wanderlust - Explore The World</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <i class="fa-solid fa-plane-departure"></i>
+        Wander<span>lust</span>
+    </a>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-icons">
+        <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+    </div>
+
+</header>
+
+
+<!-- ================= SEARCH BOX ================= -->
+
+<div class="search-box" id="search-box">
+
+    <input type="text" id="searchInput"
+           placeholder="Search destinations...">
+
+    <button id="searchButton">
+        <i class="fa-solid fa-search"></i>
+    </button>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            <i class="fa-solid fa-location-dot"></i>
+            Discover the world
+        </p>
+
+        <h1>
+            Explore The World
+            <span>With Us</span>
+        </h1>
+
+        <p>
+            Discover breathtaking destinations, unforgettable adventures,
+            and amazing experiences around the world.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#destinations" class="btn">
+                Explore Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#packages" class="btn btn-outline">
+                View Packages
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH DESTINATION ================= -->
+
+<section class="booking">
+
+    <div class="booking-box">
+
+        <div class="booking-item">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+                <span>Destination</span>
+                <input type="text" placeholder="Where to?">
+            </div>
+
+        </div>
+
+
+        <div class="booking-item">
+
+            <i class="fa-solid fa-calendar"></i>
+
+            <div>
+                <span>Check In</span>
+                <input type="date">
+            </div>
+
+        </div>
+
+
+        <div class="booking-item">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <div>
+                <span>Check Out</span>
+                <input type="date">
+            </div>
+
+        </div>
+
+
+        <div class="booking-item">
+
+            <i class="fa-solid fa-users"></i>
+
+            <div>
+                <span>Guests</span>
+                <input type="number" placeholder="2" min="1">
+            </div>
+
+        </div>
+
+
+        <button class="search-trip" id="tripSearch">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section class="section" id="destinations">
+
+    <div class="section-title">
+
+        <p>TOP DESTINATIONS</p>
+
+        <h2>
+            Explore Popular
+            <span>Destinations</span>
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="destination-grid">
+
+
+        <!-- Destination 1 -->
+
+        <div class="destination-card">
+
+            <div class="destination-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                alt="Paris">
+
+                <span class="price">
+                    $899
+                </span>
+
+            </div>
+
+            <div class="destination-info">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h3>Paris, France</h3>
+
+                <p>
+                    Experience romance, culture and the iconic Eiffel Tower.
+                </p>
+
+                <a href="#" class="card-link">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Destination 2 -->
+
+        <div class="destination-card">
+
+            <div class="destination-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+                alt="Italy">
+
+                <span class="price">
+                    $799
+                </span>
+
+            </div>
+
+            <div class="destination-info">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h3>Amalfi, Italy</h3>
+
+                <p>
+                    Enjoy beautiful coastlines, delicious food and history.
+                </p>
+
+                <a href="#" class="card-link">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Destination 3 -->
+
+        <div class="destination-card">
+
+            <div class="destination-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+                alt="Thailand">
+
+                <span class="price">
+                    $699
+                </span>
+
+            </div>
+
+            <div class="destination-info">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <h3>Phuket, Thailand</h3>
+
+                <p>
+                    Relax on tropical beaches and discover island adventures.
+                </p>
+
+                <a href="#" class="card-link">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Destination 4 -->
+
+        <div class="destination-card">
+
+            <div class="destination-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=80"
+                alt="Dubai">
+
+                <span class="price">
+                    $599
+                </span>
+
+            </div>
+
+            <div class="destination-info">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h3>Dubai, UAE</h3>
+
+                <p>
+                    Discover luxury shopping, desert adventures and skyscrapers.
+                </p>
+
+                <a href="#" class="card-link">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Destination 5 -->
+
+        <div class="destination-card">
+
+            <div class="destination-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=900&q=80"
+                alt="Japan">
+
+                <span class="price">
+                    $999
+                </span>
+
+            </div>
+
+            <div class="destination-info">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h3>Tokyo, Japan</h3>
+
+                <p>
+                    Experience modern cities, ancient temples and Japanese culture.
+                </p>
+
+                <a href="#" class="card-link">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Destination 6 -->
+
+        <div class="destination-card">
+
+            <div class="destination-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80"
+                alt="Africa">
+
+                <span class="price">
+                    $1,099
+                </span>
+
+            </div>
+
+            <div class="destination-info">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h3>Safari, Africa</h3>
+
+                <p>
+                    Get close to wildlife and experience unforgettable safaris.
+                </p>
+
+                <a href="#" class="card-link">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80"
+        alt="Travel">
+
+        <div class="experience">
+
+            <strong>15+</strong>
+            <span>Years Experience</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="small-heading">
+            ABOUT WANDERLUST
+        </p>
+
+        <h2>
+            We Help You Discover
+            <span>The World</span>
+        </h2>
+
+        <p>
+            We believe travelling is more than simply visiting a new place.
+            It's about creating memories, meeting new people and experiencing
+            different cultures.
+        </p>
+
+        <p>
+            Our team creates unforgettable travel experiences designed around
+            your interests, budget and dreams.
+        </p>
+
+
+        <div class="about-features">
+
+            <div>
+                <i class="fa-solid fa-plane"></i>
+                <h4>Best Flights</h4>
+                <p>Affordable flight options.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-hotel"></i>
+                <h4>Best Hotels</h4>
+                <p>Comfortable places to stay.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <h4>24/7 Support</h4>
+                <p>We're always here to help.</p>
+            </div>
+
+        </div>
+
+
+        <a href="#contact" class="btn">
+            Learn More
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section class="section packages" id="packages">
+
+    <div class="section-title">
+
+        <p>POPULAR PACKAGES</p>
+
+        <h2>
+            Choose Your
+            <span>Perfect Trip</span>
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="package-grid">
+
+
+        <!-- Package -->
+
+        <div class="package-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+            alt="Beach">
+
+            <div class="package-content">
+
+                <span class="days">
+                    5 Days / 4 Nights
+                </span>
+
+                <h3>Maldives Paradise</h3>
+
+                <p>
+                    Enjoy crystal-clear water, beautiful beaches and luxury resorts.
+                </p>
+
+                <div class="package-bottom">
+
+                    <strong>
+                        $1,299
+                    </strong>
+
+                    <button class="book-btn">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="package-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=900&q=80"
+            alt="Istanbul">
+
+            <div class="package-content">
+
+                <span class="days">
+                    6 Days / 5 Nights
+                </span>
+
+                <h3>Istanbul Adventure</h3>
+
+                <p>
+                    Explore mosques, markets, food and the beautiful Bosphorus.
+                </p>
+
+                <div class="package-bottom">
+
+                    <strong>
+                        $899
+                    </strong>
+
+                    <button class="book-btn">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="package-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+            alt="Mountain">
+
+            <div class="package-content">
+
+                <span class="days">
+                    7 Days / 6 Nights
+                </span>
+
+                <h3>Mountain Escape</h3>
+
+                <p>
+                    Experience peaceful mountains, nature and breathtaking views.
+                </p>
+
+                <div class="package-bottom">
+
+                    <strong>
+                        $1,099
+                    </strong>
+
+                    <button class="book-btn">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat">
+
+        <i class="fa-solid fa-earth-americas"></i>
+
+        <strong data-target="120">0</strong>
+
+        <span>Destinations</span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-users"></i>
+
+        <strong data-target="50000">0</strong>
+
+        <span>Happy Travelers</span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-plane"></i>
+
+        <strong data-target="350">0</strong>
+
+        <span>Travel Packages</span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-award"></i>
+
+        <strong data-target="15">0</strong>
+
+        <span>Years Experience</span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="section reviews" id="reviews">
+
+    <div class="section-title">
+
+        <p>TESTIMONIALS</p>
+
+        <h2>
+            What Our Travelers
+            <span>Say</span>
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="review-container">
+
+        <button class="slider-btn previous" id="previous">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <div class="review-card" id="reviewCard">
+
+            <div class="quote">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+
+            <p id="reviewText">
+                Wanderlust made our vacation absolutely amazing.
+                Everything was perfectly organized and the experience
+                was unforgettable!
+            </p>
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <h4 id="reviewName">
+                Sarah Johnson
+            </h4>
+
+            <span id="reviewLocation">
+                New York, USA
+            </span>
+
+        </div>
+
+
+        <button class="slider-btn next" id="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div>
+
+        <p>STAY UPDATED</p>
+
+        <h2>
+            Subscribe To Our Newsletter
+        </h2>
+
+        <span>
+            Get travel inspiration and exclusive offers directly in your inbox.
+        </span>
+
+    </div>
+
+
+    <form id="newsletterForm">
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required>
+
+        <button type="submit">
+            Subscribe
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="section-title">
+
+        <p>CONTACT US</p>
+
+        <h2>
+            Plan Your Next
+            <span>Adventure</span>
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-info">
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <h4>Our Location</h4>
+                    <p>123 Travel Street, New York, USA</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <h4>Phone Number</h4>
+                    <p>+1 234 567 890</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <h4>Email Address</h4>
+                    <p>hello@wanderlust.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="input-row">
+
+                <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+                <input
+                type="email"
+                placeholder="Your Email"
+                required>
+
+            </div>
+
+
+            <input
+            type="text"
+            placeholder="Subject"
+            required>
+
+
+            <textarea
+            rows="6"
+            placeholder="Your Message"
+            required></textarea>
+
+
+            <button type="submit" class="btn">
+                Send Message
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-plane-departure"></i>
+                Wander<span>lust</span>
+            </a>
+
+            <p>
+                Discover the world with us and create memories
+                that will last a lifetime.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#packages">Packages</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Popular Places</h3>
+
+            <a href="#">Paris</a>
+            <a href="#">Dubai</a>
+            <a href="#">Maldives</a>
+            <a href="#">Tokyo</a>
+            <a href="#">Thailand</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Help Center</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            © 2026 Wanderlust. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="topBtn" class="top-btn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
