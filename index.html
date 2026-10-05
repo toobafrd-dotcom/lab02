@@ -1,185 +1,53 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Website</title>
+  <title>Welcome Website</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            height: 100vh;
-            overflow: hidden;
-        }
+    .welcome {
+      color: white;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
 
-        /* Navbar */
-        nav {
-            height: 70px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 8%;
-            background: rgba(0, 0, 0, 0.15);
-            animation: slideDown 1s ease;
-        }
+    h1 {
+      font-size: 50px;
+    }
 
-        nav h2 {
-            font-size: 28px;
-        }
+    p {
+      font-size: 22px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        /* Welcome Section */
-        .welcome {
-            height: calc(100vh - 70px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .content {
-            animation: fadeUp 1.5s ease;
-        }
-
-        .content h1 {
-            font-size: 60px;
-            margin-bottom: 20px;
-            animation: zoomIn 1.5s ease;
-        }
-
-        .content h1 span {
-            color: #ffd700;
-        }
-
-        .content p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            animation: fadeIn 2s ease;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: #ffd700;
-            color: #333;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-            animation: bounce 2s infinite;
-        }
-
-        .btn:hover {
-            background: white;
-            transform: scale(1.1);
-        }
-
-        /* Animations */
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.5);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-8px);
-            }
-        }
-    </style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <nav>
-        <h2>My Website</h2>
-
-        <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
-
-    <section class="welcome">
-
-        <div class="content">
-
-            <h1>
-                Welcome to <span>My Website</span>
-            </h1>
-
-            <p>
-                We are happy to have you here!
-            </p>
-
-            <a href="#" class="btn">
-                Get Started
-            </a>
-
-        </div>
-
-    </section>
+  <div class="welcome">
+    <h1>Welcome!</h1>
+    <p>My name is <strong>Your Name</strong> 👋</p>
+  </div>
 
 </body>
 </html>
